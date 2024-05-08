@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: amit
+  name: amit
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: amit
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: amit
+    spec:
+      containers:
+      - image: akscicd/jenkinstest
+        name: jenkinstest
+        resources: {}
+status: {}
