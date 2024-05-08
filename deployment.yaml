@@ -24,20 +24,4 @@ spec:
 status: {}
 
 
-apiVersion: v1
-kind: Service
-metadata:
-  creationTimestamp: null
-  labels:
-    app: amit
-  name: amit
-spec:
-  ports:
-  - port: 80
-    protocol: TCP
-    targetPort: 80
-  selector:
-    app: amit
-  type: NodePort
-status:
-  loadBalancer: {}
+
