@@ -18,7 +18,7 @@ spec:
         app: amit
     spec:
       containers:
-      - image: akscicd/jenkinstest
+      - image: akscicd/hcl:v3
         name: jenkinstest
         resources: {}
 status: {}
